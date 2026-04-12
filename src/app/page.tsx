@@ -46,7 +46,7 @@ export default function Home() {
     // We start automatically on mount
     const timer = setTimeout(() => {
       setAppState("done");
-    }, 8500);
+    }, 7800);
 
     return () => clearTimeout(timer);
   }, []);
