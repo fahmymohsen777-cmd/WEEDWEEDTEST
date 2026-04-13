@@ -12,10 +12,11 @@ type AppState = "playing" | "done";
 export default function Home() {
   const [appState, setAppState] = useState<AppState>("playing");
   useEffect(() => {
-    // Trigger the smooth framer-motion exit transition after the GIF plays (8.0s)
+    // Trigger the smooth framer-motion exit transition early enough (7.2s)
+    // so it finishes before the 8.0s GIF loop point!
     const exitTimer = setTimeout(() => {
       setAppState("done");
-    }, 8100);
+    }, 7200);
 
     return () => {
       clearTimeout(exitTimer);
@@ -29,7 +30,7 @@ export default function Home() {
           <motion.div
             key="splash"
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.2 }}
+            transition={{ duration: 0.7 }}
             className="fixed inset-0 flex items-center justify-center bg-[#efece6] overflow-hidden z-50"
           >
             <div className="relative w-full max-w-[430px] h-full sm:h-[90vh] sm:rounded-2xl sm:shadow-2xl overflow-hidden bg-[#efece6] flex items-center justify-center">
