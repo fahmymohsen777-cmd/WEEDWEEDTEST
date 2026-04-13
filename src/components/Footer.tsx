@@ -12,7 +12,7 @@ export default function Footer({ groomName, brideName }: FooterProps) {
     <footer className="bg-[#efece6] py-20 px-6 border-t border-[#382216]/10" dir="rtl">
       <ScrollReveal direction="fade" className="text-center">
         {/* Heart ornament */}
-        <div className="flex items-center justify-center gap-3 mb-8">
+        <div className="flex items-center justify-center gap-3 mb-16">
           <div className="h-px w-12 bg-[#382216]/15" />
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
             <path
