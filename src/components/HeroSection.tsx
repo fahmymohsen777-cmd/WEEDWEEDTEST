@@ -32,7 +32,7 @@ export default function HeroSection({
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-start bg-transparent overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-start bg-transparent overflow-x-hidden"
       dir="rtl"
     >
       {/* Ambient soft glow — dark brown tint instead of gold */}

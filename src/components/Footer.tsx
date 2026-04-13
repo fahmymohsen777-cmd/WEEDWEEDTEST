@@ -30,8 +30,8 @@ export default function Footer({ groomName, brideName }: FooterProps) {
 
         {/* Main message - Calligraphy font */}
         <p
-          className="text-[#382216] text-[2.2rem] leading-normal mb-10"
-          style={{ fontFamily: "'Aref Ruqaa', serif", fontWeight: 400 }}
+          className="text-[#382216] text-[2.2rem] leading-normal"
+          style={{ fontFamily: "'Aref Ruqaa', serif", fontWeight: 400, paddingBottom: "32px", marginBottom: "16px" }}
         >
           نتمنى نشوفكم معانا 🌹
         </p>

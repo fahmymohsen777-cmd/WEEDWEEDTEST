@@ -21,8 +21,8 @@ export default function GallerySection({ images }: GallerySectionProps) {
           ذكرياتنا
         </p>
         <h2
-          className="text-[#382216] text-3xl mb-8 leading-normal"
-          style={{ fontFamily: "'Aref Ruqaa', serif", fontWeight: 400 }}
+          className="text-[#382216] text-3xl leading-normal"
+          style={{ fontFamily: "'Aref Ruqaa', serif", fontWeight: 400, paddingBottom: "16px", marginBottom: "16px" }}
         >
           لحظات من قلب الحكاية
         </h2>
